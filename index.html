@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <script src="https://kit.fontawesome.com/e141ad8aed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <title>COVID-19 World Tracker</title>
+</head>
+
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+      <div class="menu">
+          <div>
+              <div>
+                  <ul>
+                      <li><a href="#">View Profile</a></li>
+                      <li><a href="https://github.com/spriyanshu245/Store-Locator" target="blank">Other Projects</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="title">
+        <h2>COVID-19 TRACKER</h2>
+    </div>
+    <div class="search">
+        <div class="searchContainer">
+            <input type="text" id="searchBar" placeholder="Enter Country" required>
+            <div class="searchButton">
+                <i id="searchCountryButton" class="fas fa-search" onclick="searchCountry()"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="storeContainer">
+        <div class="storeList">
+            <div class="storeDetails">
+                <div id="totalCases">
+                </div>
+                <div class="fixed">
+                    <div class="storeNumber">
+                        <button id="cases" class="button"s>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="storeList">
+            <div class="storeDetails">
+                <div id="totalDeaths">
+                </div>
+                <div class="fixed">
+                    <div class="storeNumber">
+                        <button id="deaths" class="button">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="storeList">
+            <div class="storeDetails">
+                <div id="totalRecovered">
+                </div>
+                <div class="fixed">
+                    <div class="storeNumber">
+                        <button id="recovered" class="button">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="storeList">
+            <div class="storeDetails">
+                <div id="totalCritical">
+                </div>
+                <div class="fixed">
+                    <div class="storeNumber">
+                            <button id="critical" class="button">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dataContainer">
+        
+    </div>
+    <div class="closeButtonContainer">
+        <button class="closeButton"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div class="viewsContainer">
+        <div class="views">
+            <div id="cases-button">Cases</div>
+            <div id="deaths-button">Deaths</div>
+            <div id="recovered-button">Recovered</div>
+            <div id="critical-button">Critical</div>
+        </div>
+    </div>
+    
+    <div class="socialMediaContainer">
+        <div class="socialMediaInnerContainer">
+            <div class="facebook">
+                <a id="fb" href="https://www.facebook.com/profile.php?id=100005482486476" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+            <div class="instagram">
+                <a id="ig"href="https://www.instagram.com/_priyanshu245/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="github">
+                <a id="ig"href="https://github.com/spriyanshu245/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
