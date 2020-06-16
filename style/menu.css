@@ -24,7 +24,6 @@
   width: 40px;
   height: 40px;
   padding: 1rem;
-  background: rgba(29, 28, 28, 0.479);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +32,7 @@
 .menu-wrap .hamburger > div {
   position: relative;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -49,7 +48,7 @@
     z-index: 1;
     top: -10px;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: inherit;
 }
 /*Moves line down*/
